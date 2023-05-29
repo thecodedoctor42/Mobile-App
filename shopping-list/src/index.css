@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  color: #432000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html, body {
+  padding: 0;
+  background-color: #EEF0F4;
+  user-select: none;
+  
+}
+
+.cnt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 130px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.logo{
+  width: 200px;
+}
+
+input,
+button{
+  border: none; 
+  height: 50px;
+  font-size: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.514);
+}
+
+.submit-cnt{
+  display: flex;
+  justify-content: space-between;
+  width:250px;
+}
+
+.submit-item{
+  width: 47%;
+}
+
+.input-name{
+  width: 250px;
+}
+
+.input-text{
+  color: #432000;
+  background-color: #DCE1Eb;
+  text-align: center;
+}
+
+button{
+  color: #FDFDFD;
+  background-color: #BB3639;
+  cursor: pointer;
+}
+
+button:active{
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7) inset;
+}
+
+.shopping-list{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-block: 0.5em;
+  border: solid rgba(0, 0, 0, 0.511) 2px;
+  box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.514);
+  border-radius: 0.5em;
+  padding: 0 0.8em 1em;
+}
+
+.list-title{
+  margin-block: 0.5em 0;
+  padding-bottom: 0.2em;
+}
+
+.list-item{
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  border-bottom: solid rgba(0, 0, 0, 0.511) 1px;
+  padding: 0.5em 0.2em;
+  border-radius: 0.2em;
+}
+
+.list-item:hover,
+.item-info:hover,
+.item-info-label:hover{
+  cursor: url("./assets/bin-icon-small.png"), auto;
+}
+
+.list-item:not(:first-of-type){
+  margin-top: 0.2em;
+}
+
+.list-item:hover{
+  background-color:#DCE1Eb;
+}
+
+.item-info{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  gap: 0.5em;
+}
+
+.item-cb{
+  width: 0.75em;
+  min-width: 0.75em;
+  height: 0.75em;
+  margin: 0;
+}
+
+.delete-btn{
+  width: 250px;
+}
+
+#delete-msg-cnt{
+  display: none;
+  position: fixed;
+  bottom: 40%;
+  background-color: #EEF0F4;
+  border: solid 2px #202020;
+  border-radius: 0.5em;
+  padding: 2em;
+  width: 300px;
+}
+
+#delete-msg-cnt p{
+  margin: 0;
+  font-size: 1.5em;
+  text-align:center;
+  word-spacing: 0.3em;
+}
+
+.del-btn-cnt{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.del-btn-cnt button{
+  width: 100px;
+}
